@@ -7,7 +7,7 @@ attr_accessor :name
     @name = word
   end
 
-  def self(array)
+  def match(array)
     array.select {|x| x.split("").sort == @name.split("").sort}
 end
 
