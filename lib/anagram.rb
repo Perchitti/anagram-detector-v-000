@@ -1,17 +1,14 @@
 # Your code goes here!
 class Anagram
 
-ARRAY = []
+attr_accessor :name
 
   def initialize(word)
-    @word = word
-    ARRAY << word
+    @name = word
   end
 
-  def self.match
-    word.each do |words|
-      match.%w(words).split
-
-  end
+  def self(array)
+    array.select {|x| x.split("").sort == @name.split("").sort}
+end
 
 end
