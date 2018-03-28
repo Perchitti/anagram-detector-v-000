@@ -8,9 +8,9 @@ ARRAY = []
     ARRAY << word
   end
 
-  def match(word)
+  def self.match
     word.each do |words|
-      match.%w(words)
+      match.%w(words).split
 
   end
 
